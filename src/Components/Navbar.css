@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles */
+.custom-navbar {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    padding-top: 10px;
+}
+
+.Logo {
+    height: 70px;
+}
+
+.Menu {
+    color: white;
+    margin-left: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.Menu:hover {
+    text-decoration: underline;
+    color: green;
+    border-radius: 10px;
+    background-color: rgba(240, 240, 240, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-buttons .btn {
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+    .Logo {
+        height: 50px;
+    }
+
+    .Menu {
+        margin-left: 10px;
+        font-size: 0.9rem;
+    }
+}

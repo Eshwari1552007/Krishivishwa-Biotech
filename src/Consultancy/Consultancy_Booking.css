@@ -1,0 +1,446 @@
+/* ==============================
+   🌾 KRISHIVISHWA CONSULTANCY BOOKING FORM
+============================== */
+
+.krishivishwa-consultancy-container.consultation-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #064e3b, #134e4a, #0f172a);
+  padding: 80px 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.krishivishwa-consultancy-container.background-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../Assets/Images/Booking.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.krishivishwa-consultancy-container.decorative-element {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 1;
+}
+
+.krishivishwa-consultancy-container.decorative-left {
+  top: 80px;
+  left: 40px;
+  width: 128px;
+  height: 128px;
+  background: rgba(16, 185, 129, 0.2);
+}
+
+.krishivishwa-consultancy-container.decorative-right {
+  bottom: 80px;
+  right: 40px;
+  width: 160px;
+  height: 160px;
+  background: rgba(245, 158, 11, 0.2);
+}
+
+.krishivishwa-consultancy-container.container {
+  position: relative;
+  z-index: 10;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.krishivishwa-consultancy-container.header-section {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.krishivishwa-consultancy-container.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #10b981, #14b8a6, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+}
+
+.krishivishwa-consultancy-container.subtitle {
+  color: #cbd5e1;
+  font-size: 1.125rem;
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+.krishivishwa-consultancy-container.form-card {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.krishivishwa-consultancy-container.card-header {
+  text-align: center;
+  padding-bottom: 32px;
+  background: linear-gradient(135deg, #ecfdf5, #f0fdfa);
+  padding: 32px 32px 32px 32px;
+}
+
+.krishivishwa-consultancy-container.card-title {
+  font-size: 1.875rem;
+  color: #1e293b;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.krishivishwa-consultancy-container.card-description {
+  color: #64748b;
+  font-size: 1.125rem;
+}
+
+.krishivishwa-consultancy-container.card-content {
+  padding: 32px;
+}
+
+.krishivishwa-consultancy-container.consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.krishivishwa-consultancy-container.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.krishivishwa-consultancy-container.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.krishivishwa-consultancy-container.form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.krishivishwa-consultancy-container.input-wrapper {
+  position: relative;
+}
+
+.krishivishwa-consultancy-container.form-input,
+.krishivishwa-consultancy-container.form-textarea {
+  height: 56px;
+  border: 2px solid #e2e8f0;
+  background: rgba(248, 250, 252, 0.5);
+  color: #1e293b;
+  border-radius: 12px;
+  padding: 0 16px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.krishivishwa-consultancy-container.form-textarea {
+  height: auto;
+  min-height: 120px;
+  padding: 16px;
+  resize: none;
+}
+
+.krishivishwa-consultancy-container.form-input::placeholder,
+.krishivishwa-consultancy-container.form-textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Individual field hover effects with left and bottom borders */
+.krishivishwa-consultancy-container.name-input:hover {
+  border-left: 4px solid #10b981;
+  border-bottom: 4px solid #10b981;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.krishivishwa-consultancy-container.email-input:hover {
+  border-left: 4px solid #14b8a6;
+  border-bottom: 4px solid #14b8a6;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.krishivishwa-consultancy-container.phone-input:hover {
+  border-left: 4px solid #f59e0b;
+  border-bottom: 4px solid #f59e0b;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.krishivishwa-consultancy-container.location-input:hover {
+  border-left: 4px solid #6366f1;
+  border-bottom: 4px solid #6366f1;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.krishivishwa-consultancy-container.farm-size-input:hover {
+  border-left: 4px solid #22c55e;
+  border-bottom: 4px solid #22c55e;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.krishivishwa-consultancy-container.crop-type-input:hover {
+  border-left: 4px solid #f97316;
+  border-bottom: 4px solid #f97316;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.krishivishwa-consultancy-container.description-input:hover {
+  border-left: 4px solid #a855f7;
+  border-bottom: 4px solid #a855f7;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/* Focus states */
+.krishivishwa-consultancy-container.form-input:focus,
+.krishivishwa-consultancy-container.form-textarea:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.krishivishwa-consultancy-container.name-input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+}
+
+.krishivishwa-consultancy-container.email-input:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.1);
+}
+
+.krishivishwa-consultancy-container.phone-input:focus {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.1);
+}
+
+.krishivishwa-consultancy-container.location-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.krishivishwa-consultancy-container.farm-size-input:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.1);
+}
+
+.krishivishwa-consultancy-container.crop-type-input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.1);
+}
+
+.krishivishwa-consultancy-container.description-input:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.1);
+}
+
+/* Radio Group Styles */
+.krishivishwa-consultancy-container.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.krishivishwa-consultancy-container.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border: 2px solid #e2e8f0;
+  background: rgba(248, 250, 252, 0.5);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.krishivishwa-consultancy-container.phone-option:hover {
+  border-left: 4px solid #10b981;
+  border-bottom: 4px solid #10b981;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: rgba(236, 253, 245, 0.5);
+}
+
+.krishivishwa-consultancy-container.field-option:hover {
+  border-left: 4px solid #14b8a6;
+  border-bottom: 4px solid #14b8a6;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: rgba(240, 253, 250, 0.5);
+}
+
+.krishivishwa-consultancy-container.radio-input {
+  width: 20px;
+  height: 20px;
+  accent-color: #10b981;
+  cursor: pointer;
+}
+
+.krishivishwa-consultancy-container.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #374151;
+  font-weight: 500;
+  flex: 1;
+}
+
+.krishivishwa-consultancy-container.radio-icon {
+  font-size: 1.25rem;
+}
+
+.krishivishwa-consultancy-container.radio-text {
+  line-height: 1.4;
+}
+
+.krishivishwa-consultancy-container.radio-subtext {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+/* Submit Button */
+.krishivishwa-consultancy-container.submit-section {
+  padding-top: 24px;
+}
+
+.krishivishwa-consultancy-container.submit-button {
+  width: 100%;
+  height: 64px;
+  background: linear-gradient(135deg, #059669, #0d9488, #d97706);
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.krishivishwa-consultancy-container.submit-button:hover {
+  background: linear-gradient(135deg, #047857, #0f766e, #b45309);
+  transform: scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.krishivishwa-consultancy-container.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Loader Animation */
+.krishivishwa-consultancy-container.loader {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success Notice */
+.krishivishwa-consultancy-container.success-notice {
+  border: 2px solid #10b981;
+  background: linear-gradient(135deg, #ecfdf5, #f0fdfa);
+  color: #065f46;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.125rem;
+  padding: 20px;
+  border-radius: 12px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Error Text */
+.krishivishwa-consultancy-container.error-text {
+  color: #dc2626;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .krishivishwa-consultancy-container.main-title {
+    font-size: 2.25rem;
+  }
+
+  .krishivishwa-consultancy-container.form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .krishivishwa-consultancy-container.card-content {
+    padding: 24px 20px;
+  }
+
+  .krishivishwa-consultancy-container.radio-group {
+    flex-direction: column;
+  }
+
+  .krishivishwa-consultancy-container.consultation-section {
+    padding: 40px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .krishivishwa-consultancy-container.main-title {
+    font-size: 1.875rem;
+  }
+
+  .krishivishwa-consultancy-container.card-header {
+    padding: 24px 20px;
+  }
+
+  .krishivishwa-consultancy-container.card-content {
+    padding: 20px 16px;
+  }
+
+  .krishivishwa-consultancy-container.consultation-form {
+    gap: 24px;
+  }
+}

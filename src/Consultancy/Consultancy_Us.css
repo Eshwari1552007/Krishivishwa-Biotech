@@ -1,0 +1,1140 @@
+/* Professional Color Theme & Layout */
+.consultancy-us {
+  background: linear-gradient(135deg, #f0fdf4, #e0f7e4);
+  /* Match services-section */
+  background-image: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+  background-repeat: repeat;
+  background-size: 300px 300px;
+  background-blend-mode: overlay;
+  padding: 0;
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.consultancy-us .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+
+
+.consultancy-us::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 25% 25%, rgba(71, 85, 105, 0.04), transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(100, 116, 139, 0.04), transparent 50%),
+    rgba(0, 0, 0, 0.05);
+  /* subtle overlay */
+  pointer-events: none;
+}
+
+/* 🎨 Orbit Button Color Themes */
+.consultancy-us .theme-yellow .orbit-button {
+  background: #fef08a;
+  border-color: #facc15;
+}
+
+.consultancy-us .theme-yellow.active .orbit-button {
+  background: #facc15;
+  color: #1a1a1a;
+}
+
+.consultancy-us .theme-blue .orbit-button {
+  background: #bae6fd;
+  border-color: #0ea5e9;
+}
+
+.consultancy-us .theme-blue.active .orbit-button {
+  background: #0ea5e9;
+  color: #ffffff;
+}
+
+.consultancy-us .theme-orange .orbit-button {
+  background: #fdba74;
+  border-color: #fb923c;
+}
+
+.consultancy-us .theme-orange.active .orbit-button {
+  background: #fb923c;
+  color: #ffffff;
+}
+
+/* 🟨 Yellow Theme */
+.consultancy-us .content-card.theme-yellow {
+  background: linear-gradient(135deg, #fffbea, #fef08a);
+  color: #1f2937;
+}
+
+/* 🟦 Blue Theme */
+.consultancy-us .content-card.theme-blue {
+  background: linear-gradient(135deg, #e0f2ff, #bae6fd);
+  color: #0f172a;
+}
+
+/* 🟧 Orange Theme */
+.consultancy-us .content-card.theme-orange {
+  background: linear-gradient(135deg, #fff7ed, #fdba74);
+  color: #1c1917;
+}
+
+/* Optional: Darker headings */
+.consultancy-us .content-card.theme-yellow .feature-title,
+.consultancy-us .content-card.theme-blue .feature-title,
+.consultancy-us .content-card.theme-orange .feature-title {
+  color: #1e293b;
+}
+
+/* 🌟 Feature Title */
+.consultancy-us .theme-yellow .feature-title {
+  color: #854d0e;
+  /* golden-brown */
+}
+
+.consultancy-us .theme-blue .feature-title {
+  color: #1e3a8a;
+  /* deep blue */
+}
+
+.consultancy-us .theme-orange .feature-title {
+  color: #9a3412;
+  /* burnt orange */
+}
+
+/* 🌿 Stats Text */
+.consultancy-us .theme-yellow .stats-text {
+  color: #92400e;
+}
+
+.consultancy-us .theme-blue .stats-text {
+  color: #0369a1;
+}
+
+.consultancy-us .theme-orange .stats-text {
+  color: #c2410c;
+}
+
+/* 📝 Description Text */
+.consultancy-us .theme-yellow .feature-description {
+  color: #78350f;
+}
+
+.consultancy-us .theme-blue .feature-description {
+  color: #1e40af;
+}
+
+.consultancy-us .theme-orange .feature-description {
+  color: #7c2d12;
+}
+
+/* ☑️ Checkmark */
+.consultancy-us .theme-yellow .stats-check,
+.consultancy-us .theme-yellow .progress-dot.active {
+  color: #f59e0b;
+}
+
+.consultancy-us .theme-blue .stats-check,
+.consultancy-us .theme-blue .progress-dot.active {
+  color: #0ea5e9;
+}
+
+.consultancy-us .theme-orange .stats-check,
+.consultancy-us .theme-orange .progress-dot.active {
+  color: #fb923c;
+}
+
+
+
+.consultancy-us .section-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Header Section - Centered & Professional */
+.consultancy-us .section-header {
+  text-align: center;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.consultancy-us .header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  background: rgba(34, 197, 94, 0.15);
+  /* transparent green */
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 18px rgba(34, 197, 94, 0.2);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #047857;
+  /* dark green text */
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Optional shimmer shine across the badge */
+.consultancy-us .header-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0.2) 100%);
+  transform: skewX(-25deg);
+  animation: shine-badge 6s ease-in-out infinite;
+
+}
+
+@keyframes shine-badge {
+  0% {
+    left: -75%;
+  }
+
+  100% {
+    left: 125%;
+  }
+}
+
+/* Badge icon */
+.consultancy-us .badge-icon {
+  font-size: 1rem;
+}
+
+/* Badge text */
+.consultancy-us .badge-text {
+  font-weight: 600;
+  color: #047857;
+  letter-spacing: 0.04em;
+}
+
+
+.consultancy-us .badge-icon {
+  font-size: 0.9rem;
+}
+
+.consultancy-us .badge-text {
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.025em;
+}
+
+.consultancy-us .section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  text-align: center;
+  word-break: break-word;
+  white-space: normal;
+}
+
+
+.consultancy-us .title-highlight {
+  background: linear-gradient(90deg, #38bdf8, #4ade80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.consultancy-us .title-highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #64748b, #94a3b8);
+  border-radius: 2px;
+}
+
+.consultancy-us .section-subtitle {
+  font-size: 0.95rem;
+  color: #3b3f39;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Content - Perfect 50/50 Split */
+.consultancy-us .main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 100%;
+}
+
+/* Left Side - Orbital Hub */
+.consultancy-us .hub-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consultancy-us .orbital-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.consultancy-us .central-hub {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.consultancy-us .hub-circle {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid #bae6fd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.2);
+}
+
+.consultancy-us .hub-icon {
+  font-size: 1.8rem;
+}
+
+.consultancy-us .orbit-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  z-index: 2;
+  /* ✨ keep buttons above lines */
+}
+
+.consultancy-us .orbit-button {
+  width: 56px;
+  height: 56px;
+  background: transparent;
+  /* 🟢 Remove initial background */
+  border: 2px solid transparent;
+  /* No border by default */
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+
+.consultancy-us .orbit-element:hover .orbit-button {
+  transform: scale(1.15);
+  border-color: #94a3b8;
+  box-shadow: 0 4px 20px rgba(71, 85, 105, 0.15);
+}
+
+.consultancy-us .orbit-element.active .orbit-button {
+  background: #0ea5e9;
+  border-color: #0ea5e9;
+  color: white;
+  transform: scale(1.1);
+}
+
+.consultancy-us .orbit-icon {
+  font-size: 1.3rem;
+}
+
+.consultancy-us .orbit-connector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110px;
+  /* same as translateX */
+  height: 2px;
+  background: #94a3b8;
+  transform-origin: left center;
+  transform: rotate(var(--orbit-angle));
+  z-index: 1;
+}
+
+.consultancy-us .orbit-element.active .orbit-connector {
+  background: #64748b;
+}
+
+.consultancy-us .orbit-label {
+  position: absolute;
+  top: -1.8rem;
+  /* ⬅ moved above button */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #334155;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+
+.consultancy-us .orbit-element:hover .orbit-label {
+  color: #059669;
+}
+
+@keyframes slow-pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.consultancy-us .orbit-icon {
+  font-size: 1.6rem;
+  animation: slow-pulse 3s ease-in-out infinite;
+}
+
+.consultancy-us .orbit-element.active .orbit-label {
+  color: #0f766e;
+}
+
+.consultancy-us .orbit-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 240px;
+  height: 240px;
+  border: 1px dashed #618dc1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 25s linear infinite;
+  opacity: 1;
+}
+
+/* Right Side - Content Display */
+.consultancy-us .content-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  /* slightly wider to accommodate side cards */
+  height: 100%;
+  padding: 0;
+  /* ensure padding inside the screen */
+  box-sizing: border-box;
+}
+
+.consultancy-us .content-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 1.5rem;
+  padding: 1.75rem 1.25rem;
+  box-shadow: 0 8px 32px rgba(71, 85, 105, 0.08);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+}
+
+.consultancy-us .feature-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.consultancy-us .feature-icon-container {
+  width: 60px;
+  height: 60px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.consultancy-us .feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.consultancy-us .feature-meta {
+  flex: 1;
+}
+
+.consultancy-us .feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.consultancy-us .feature-stats {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.consultancy-us .stats-check {
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.consultancy-us .stats-text {
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.consultancy-us .feature-description {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.consultancy-us .progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.consultancy-us .progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.consultancy-us .progress-dot.active {
+  background: #475569;
+  transform: scale(1.2);
+}
+
+.consultancy-us .progress-dot:hover {
+  background: #94a3b8;
+}
+
+/* Bottom Statistics - Centered */
+/* Bottom Statistics - Centered */
+.consultancy-us .bottom-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  /* ✅ Glassy Green Background */
+  background: rgba(22, 163, 74, 0.15); /* Emerald green with 15% opacity */
+  border: 2px solid rgba(5, 150, 105, 0.45); /* darker green transparent border */
+  border-radius: 1.5rem;
+  padding: 0.7rem 0.7rem;
+
+  /* ✅ Glass Effect */
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+
+  /* ✅ Shadow and depth */
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.25);
+
+  max-width: 100%;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+
+.consultancy-us .stat-group {
+  text-align: center;
+}
+
+/* ✅ 3D number look */
+.consultancy-us .stat-number {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #151615;
+  text-shadow:
+    1px 1px 0 #a7f3d0,
+    2px 2px 2px rgba(0, 0, 0, 0.15); /* Initial 3D shadow */
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* ✅ On Hover: Slight Scale + Deeper Shadow */
+.consultancy-us .stat-group:hover .stat-number {
+  transform: scale(1.1); /* pop effect */
+}
+
+
+/* Label below number */
+.consultancy-us .stat-label {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Divider between stat groups */
+.consultancy-us .stat-divider {
+  width: 2px;
+  height: 2.5rem;
+  background: #065f46;
+  opacity: 0.4;
+}
+
+
+/* Animations */
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .consultancy-us .section-title {
+    font-size: 2.25rem;
+  }
+
+  .consultancy-us .main-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .consultancy-us .orbital-container {
+    width: 260px;
+    height: 260px;
+  }
+
+  .consultancy-us .orbit-element {
+    transform: translate(-50%, -50%) rotate(var(--orbit-angle)) translateX(95px) rotate(calc(-1 * var(--orbit-angle)));
+  }
+
+  .consultancy-us .orbit-connector {
+    width: 95px;
+  }
+
+  .consultancy-us .orbit-ring {
+    width: 210px;
+    height: 210px;
+  }
+
+  .consultancy-us .content-card {
+    padding: 2rem;
+  }
+
+  .consultancy-us .bottom-stats {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1.25rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .consultancy-us .section-container {
+    padding: 0 1rem;
+  }
+
+  .consultancy-us .section-title {
+    font-size: 1.875rem;
+  }
+
+  .consultancy-us .orbital-container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .consultancy-us .orbit-element {
+    transform: translate(-50%, -50%) rotate(var(--orbit-angle)) translateX(80px) rotate(calc(-1 * var(--orbit-angle)));
+  }
+
+  .consultancy-us .orbit-connector {
+    width: 80px;
+  }
+
+  .consultancy-us .orbit-ring {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.consultancy-us .orbit-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:
+    translate(-50%, -50%) rotate(var(--orbit-angle)) translateX(110px) rotate(calc(-1 * var(--orbit-angle)));
+  transform-origin: center center;
+  transition: transform 0.4s ease;
+}
+
+.consultancy-us .orbit-button:hover {
+  transform: scale(1.1);
+  background-color: #e0f2fe;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.consultancy-us .orbit-label:hover {
+  color: #0f766e;
+}
+
+.consultancy-us .content-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.consultancy-us .progress-dot:hover {
+  background-color: #0ea5e9;
+  transform: scale(1.1);
+}
+
+
+
+/* ✨ Title Highlight Fix */
+.consultancy-us .title-highlight {
+  color: #0ea5e9;
+  font-weight: 800;
+}
+
+/* 🌟 Orbit shimmer pulse for active */
+@keyframes shimmer {
+  0% {
+    box-shadow: 0 0 10px 2px #facc15;
+  }
+
+  50% {
+    box-shadow: 0 0 18px 4px #facc15;
+  }
+
+  100% {
+    box-shadow: 0 0 10px 2px #facc15;
+  }
+}
+
+.consultancy-us .orbit-element.glow-pulse .orbit-button {
+  animation: shimmer 2s infinite;
+}
+
+/* 🧊 Glass hover */
+.consultancy-us .content-card {
+  transition: all 0.3s ease;
+}
+
+.consultancy-us .content-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* 🌿 Center Glow */
+.halo-glow {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.4) 0%, transparent 80%);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  animation: pulseHalo 3s infinite ease-in-out;
+}
+
+@keyframes pulseHalo {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+}
+
+/* 🪄 Header Badge Animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-bounce-in {
+  animation: bounceIn 1s ease forwards;
+}
+
+.consultancy-us .carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding: 3rem 1rem;
+  /* helps on smaller screens */
+  box-sizing: border-box;
+}
+
+.consultancy-us .content-card {
+  position: absolute;
+  width: 100%;
+  max-width: 480px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Center (active) */
+.consultancy-us .content-card.active {
+  transform: scale(1.02) translateY(0);
+  z-index: 3;
+  opacity: 1;
+  pointer-events: auto;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Left (prev) */
+.consultancy-us .content-card.prev {
+  transform: translateX(-40%) scale(0.95);
+  z-index: 2;
+  opacity: 0.6;
+}
+
+/* Right (next) */
+.consultancy-us .content-card.next {
+  transform: translateX(40%) scale(0.95);
+  z-index: 2;
+  opacity: 0.6;
+}
+
+/* All others hidden */
+.consultancy-us .content-card.hidden {
+  display: none;
+}
+
+/* 🔧 Additional Mobile Optimizations */
+@media (max-width: 768px) {
+  .consultancy-us {
+    height: auto; /* remove fixed 80vh on small screens */
+    padding: 2rem 0;
+  }
+
+  .consultancy-us .main-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .consultancy-us .hub-side,
+  .consultancy-us .content-side {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .consultancy-us .content-card {
+    max-width: 90%;
+    position: relative;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    display: block !important;
+    pointer-events: auto !important;
+    z-index: 1 !important;
+    margin: 0 auto;
+  }
+
+  .consultancy-us .carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .consultancy-us .orbit-element {
+    width: 48px;
+    height: 48px;
+  }
+
+  .consultancy-us .orbit-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .consultancy-us .orbit-label {
+    font-size: 0.6rem;
+    top: -1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .consultancy-us .feature-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .consultancy-us .feature-meta {
+    text-align: center;
+  }
+
+  .consultancy-us .stat-number {
+    font-size: 1.2rem;
+  }
+
+  .consultancy-us .stat-label {
+    font-size: 0.85rem;
+  }
+
+  .consultancy-us .bottom-stats {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .consultancy-us .stat-divider {
+    display: none;
+  }
+
+
+  .consultancy-us .section-title {
+    font-size: 1.75rem;
+  }
+
+  .consultancy-us .feature-description {
+    font-size: 0.85rem;
+  }
+
+  .consultancy-us .content-card {
+    padding: 1.25rem;
+  }
+
+  .consultancy-us .progress-dots {
+    gap: 0.5rem;
+  }
+
+  .consultancy-us .progress-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* 📱 Mobile-Friendly Layout: Orbit on top, card below */
+@media (max-width: 768px) {
+  .consultancy-us .main-content {
+    flex-direction: column; /* Stack vertically */
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .consultancy-us .hub-side,
+  .consultancy-us .content-side {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .consultancy-us .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+
+  .consultancy-us .content-card {
+    position: relative !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    display: block !important;
+    pointer-events: auto !important;
+    z-index: 1 !important;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 480px;
+    padding: 1.5rem;
+  }
+
+  .consultancy-us .content-card.prev,
+  .consultancy-us .content-card.next,
+  .consultancy-us .content-card.hidden {
+    display: none !important;
+  }
+
+  .consultancy-us .bottom-stats {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1rem;
+  }
+
+  .consultancy-us .stat-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* 🌿 Stack the orbit and cards vertically */
+  .consultancy-us .main-content {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  /* ⬇️ Add spacing above the orbit section */
+  .consultancy-us .hub-side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .consultancy-us .orbital-container {
+    width: 240px;
+    height: 240px;
+  }
+
+  .consultancy-us .orbit-ring {
+    width: 200px;
+    height: 200px;
+  }
+
+  .consultancy-us .orbit-element {
+    transform: translate(-50%, -50%) rotate(var(--orbit-angle)) translateX(85px) rotate(calc(-1 * var(--orbit-angle)));
+  }
+
+  .consultancy-us .orbit-connector {
+    width: 85px;
+  }
+
+  /* 💬 Show only the active card, vertically below orbit */
+  .consultancy-us .content-side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .consultancy-us .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .consultancy-us .content-card {
+    position: relative !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    display: block !important;
+    pointer-events: auto !important;
+    z-index: 1 !important;
+    width: 90%;
+    max-width: 480px;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .consultancy-us .content-card.prev,
+  .consultancy-us .content-card.next,
+  .consultancy-us .content-card.hidden {
+    display: none !important;
+  }
+
+  /* 🧊 Keep bottom stats as on laptop (horizontal layout) */
+  .consultancy-us .bottom-stats {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.7rem;
+  }
+
+  .consultancy-us .stat-divider {
+    display: block;
+    height: 2.5rem;
+    width: 2px;
+    background: #065f46;
+    opacity: 0.4;
+  }
+}

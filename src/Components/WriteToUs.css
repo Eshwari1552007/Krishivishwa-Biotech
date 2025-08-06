@@ -363,8 +363,8 @@
   }
 
   .write-to-us-section .contact-info p:last-child {
-    flex-direction: column;
-    gap: 6px;
+    flex-direction: row;
+    gap: 8px;
   }
 
   .write-to-us-section .contact-info p i {

@@ -1,0 +1,224 @@
+/* ==============================
+   ☎️ Enhanced Contact Section (Scoped)
+============================== */
+
+.consultancy-page .contact-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0f172a, #14532d);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.consultancy-page .contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("../Assets/Images/Expert.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.consultancy-page .contact-section .section-title {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  background: linear-gradient(135deg, #facc15, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.consultancy-page .contact-section .contact-enhanced-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item {
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item:hover {
+  transform: translateY(-8px);
+}
+
+.consultancy-page .contact-section .icon-3d {
+  font-size: 4rem;
+  color: #facc15;
+  transform: rotateX(15deg) rotateY(15deg);
+  transition: transform 0.5s ease;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item:hover .icon-3d {
+  transform: rotateX(0deg) rotateY(0deg) scale(1.05);
+}
+
+.consultancy-page .contact-section .contact-enhanced-item h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin: 20px 0 10px;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item p a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fef9c3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item p a:hover {
+  color: #bbf7d0;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item span {
+  font-size: 1rem;
+  color: #bbf7d0;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .consultancy-page .contact-section .contact-enhanced-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .consultancy-page .contact-section .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* ==============================
+   ☎️ Real 3D Icons Contact Section
+============================== */
+
+.consultancy-page .contact-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0f172a, #14532d);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.consultancy-page .contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("../Assets/Images/Expert.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.consultancy-page .contact-section .section-title {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  background: linear-gradient(135deg, #facc15, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.consultancy-page .contact-section .contact-enhanced-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item {
+  flex: 1 1 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item:hover {
+  transform: translateY(-8px);
+}
+
+.consultancy-page .contact-section .icon-3d-img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.consultancy-page .Map{
+  width: 50px !important;
+  height: 50px !important;
+}
+
+
+.consultancy-page .contact-section .contact-enhanced-item:hover .icon-3d-img {
+   transform: rotateY(360deg);
+}
+
+.consultancy-page .contact-section .contact-enhanced-item h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin: 20px 0 10px;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item p a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fef9c3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item p a:hover {
+  color: #bbf7d0;
+}
+
+.consultancy-page .contact-section .contact-enhanced-item span {
+  font-size: 1rem;
+  color: #bbf7d0;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .consultancy-page .contact-section .contact-enhanced-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .consultancy-page .contact-section .section-title {
+    font-size: 2.2rem;
+  }
+
+  .consultancy-page .contact-section .contact-enhanced-item {
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.consultancy-page .contact-section .section-title{
+  margin-bottom: 60px;
+}
+}
+

@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import TopNavbar from './Components/TopNavbar';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
-import AboutUs from './Components/Aboutus';
+import AboutUs from './Pages/About';
 import Login from './Pages/Login';
 import ContactUs from './Pages/ContactUs';
-import Consultancy from './Pages/Consultancy'
+import Consultancy from './Pages/Consulatncy'
 
 import { useEffect } from 'react';
 

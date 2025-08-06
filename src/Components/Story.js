@@ -32,7 +32,7 @@ const floatingCards = [
   }
 ];
 
-function Story() {
+const Story = ({ id }) => {
   const [activeCard, setActiveCard] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
   const cardsRef = useRef([]);
@@ -85,7 +85,7 @@ function Story() {
 }, []);
 
   return (
-    <div className="story">
+    <div id={id} className="story">
       {/* Banner Section */}
       <div className="offer-banner container" data-aos="fade-up">
         <div className="offer-banner-inner">

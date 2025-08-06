@@ -41,7 +41,8 @@ const factsData = [
   },
 ];
 
-export default function Facts() {
+// ✅ Updated to accept and apply `id`
+export default function Facts({ id }) {
   const [counters, setCounters] = useState(Array(factsData.length).fill(0));
   const sectionRef = useRef(null);
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -87,7 +88,7 @@ export default function Facts() {
   };
 
   return (
-    <div className="facts-section" ref={sectionRef}>
+    <div id={id} className="facts-section" ref={sectionRef}>
       <p className="facts-title">OUR FACTS</p>
       <h2 className="facts-heading">
         Making a positive impact today for the <br />

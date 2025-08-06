@@ -5,9 +5,9 @@ import Button from 'react-bootstrap/Button';
 import { FiSearch } from "react-icons/fi";
 import { BsCartPlus } from "react-icons/bs";
 import Story from '../Components/Story';
-import '../Components/Home.css';
+import './Home.css';
 import useAOS from '../utils/useAos';
-import Facts from '../Facts/Facts'
+import Facts from '../Components/Facts.js'
 import WriteToUs from '../Components/WriteToUs.js'
 import ImageSlider from '../Components/ImageSlider.js'
 
@@ -88,9 +88,9 @@ function Home() {
                 </div>
             </div>
 
-            <Story />
+            <Story id="our-story" />
             <ImageSlider/>
-            <Facts/>
+            <Facts id="facts" />
             <WriteToUs/>
             
         </>
